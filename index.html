@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diyabet ve Obezite Rehberi | Metabolik Sağlık Platformu</title>
-<meta name="description" content="Diyabet, obezite, HbA1c yüksekliği, insülin direnci ve kolesterol yönetimi üzerine bilimsel rehber. Metabolik sağlığınızı bütüncül yaklaşımla yönetin.">
+<title>Diyabet Yolculuğu | Bilimsel ve Empatik Diyabet Rehberi</title>
+<meta name="description" content="Diyabet, obezite, HbA1c ve insülin direnci üzerine bilimsel rehber ve gerçek yaşam hikâyeleri. Empatik ve insan merkezli diyabet platformu.">
 
 <style>
 body{
@@ -14,44 +14,89 @@ background:#f8fafc;
 color:#1e293b;
 line-height:1.6;
 }
+
 nav{
 position:fixed;
 top:0;
 width:100%;
 background:white;
-padding:15px 20px;
-box-shadow:0 2px 8px rgba(0,0,0,0.05);
+padding:16px 20px;
 display:flex;
 justify-content:space-between;
-font-weight:600;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 z-index:1000;
 }
+
+nav .logo{
+font-weight:700;
+font-size:16px;
+}
+
 nav a{
 text-decoration:none;
 color:#1e293b;
 margin-left:15px;
 font-size:14px;
 }
+
 header{
 background:#0f172a;
 color:white;
-padding:120px 20px 80px 20px;
+padding:120px 20px 90px 20px;
 text-align:center;
 }
+
 header h1{
-font-size:30px;
+font-size:28px;
 margin-bottom:15px;
 }
+
+header p{
+max-width:600px;
+margin:auto;
+opacity:0.9;
+}
+
+.hero-buttons{
+margin-top:25px;
+}
+
+.button{
+display:inline-block;
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+margin:5px;
+}
+
+.button-primary{
+background:#2563eb;
+color:white;
+}
+
+.button-secondary{
+background:white;
+color:#0f172a;
+}
+
 .section{
-padding:50px 20px;
+padding:60px 20px;
 max-width:1000px;
 margin:auto;
 }
+
+.section h2{
+margin-bottom:20px;
+}
+
 .cards{
 display:grid;
 grid-template-columns:1fr;
 gap:20px;
 }
+
 .card{
 background:white;
 padding:25px;
@@ -60,66 +105,29 @@ box-shadow:0 4px 15px rgba(0,0,0,0.05);
 transition:0.2s ease;
 cursor:pointer;
 }
+
 .card:hover{
 transform:translateY(-6px);
 }
-.card h3{
-margin-top:0;
-font-size:19px;
-}
+
 .highlight{
 background:#e0f2fe;
-padding:30px;
-border-radius:14px;
+padding:40px 20px;
+border-radius:16px;
 }
-  <section class="section">
-<h2>Diyabetdoktorum Cevaplıyor</h2>
-<p>Diyabet, obezite ve metabolik sağlıkla ilgili sorularınızı iletebilirsiniz.</p>
 
-<form action="https://formspree.io/f/mgoldkny" method="POST">
-
-<label>Ad Soyad</label><br>
-<input type="text" name="isim" required style="width:100%;padding:10px;margin-bottom:15px;"><br>
-
-<label>E-posta</label><br>
-<input type="email" name="email" required style="width:100%;padding:10px;margin-bottom:15px;"><br>
-
-<label>Sorunuz</label><br>
-<textarea name="mesaj" rows="5" required style="width:100%;padding:10px;margin-bottom:15px;"></textarea><br>
-
-<button type="submit" style="background:#1e3a8a;color:white;padding:12px 25px;border:none;border-radius:8px;">
-Gönder
-</button>
-
-</form>
-
-<p style="font-size:12px;margin-top:15px;color:#64748b;">
-Bu form tıbbi tanı ve tedavi amacı taşımaz. Kişisel sağlık bilgilerinizi detaylı paylaşmayınız.
-</p>
-
-</section>
-.cta{
-background:#1e3a8a;
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-.button{
-display:inline-block;
-margin-top:20px;
-background:white;
-color:#1e3a8a;
-padding:12px 26px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-}
 footer{
 background:#0f172a;
 color:#94a3b8;
 padding:40px 20px;
 font-size:14px;
 }
+
+footer a{
+color:white;
+text-decoration:none;
+}
+
 @media(min-width:768px){
 .cards{
 grid-template-columns:1fr 1fr;
@@ -134,29 +142,36 @@ font-size:40px;
 <body>
 
 <nav>
-<span>DiyabetDoktorum</span>
+<div class="logo">DiyabetDoktorum</div>
 <div>
-<a href="#">HbA1c</a>
-<a href="#">İnsülin Direnci</a>
-<a href="#">Kolesterol</a>
-<a href="#">Obezite</a>
+<a href="#">Rehber</a>
+<a href="#">Hikâyeler</a>
+<a href="#">Uzmanına Sor</a>
+<a href="#">Biz Kimiz</a>
 </div>
 </nav>
 
 <header>
-<h1>Metabolik Sağlık Bir Bütündür</h1>
-<p>Diyabet, obezite ve kolesterol sorunları ayrı değil; aynı metabolik sürecin parçalarıdır.</p>
+<h1>Diyabet yolculuğunda karşılıklı öğreniyoruz.</h1>
+<p>Bilimsel rehberlik, gerçek yaşam deneyimleri ve insan merkezli diyabet yönetimi.</p>
+<div class="hero-buttons">
+<a href="#" class="button button-primary">Rehberi Keşfet</a>
+<a href="#" class="button button-secondary">Gerçek Hikâyeleri Oku</a>
+</div>
 </header>
 
 <section class="section">
-<h2>En Çok Okunan Konular</h2>
+<h2>Diyabet, rakamlardan ibaret değildir.</h2>
+<p>Diyabet; parmak ucundaki şekerden ya da basküldeki sayıdan ibaret değildir. Günlük hayatın içinde, işte, okulda, aile sofralarında yer alır. Bu platform, diyabeti ve diyabetliyi yaşamın içinde, kendi cümleleriyle anlamak ve anlatmak için kurulmuştur.</p>
+</section>
+
+<section class="section">
+<h2>Bilimsel Rehber</h2>
 <div class="cards">
-<a href="hba1c-kac-olmali.html" style="text-decoration:none; color:inherit;">
 <div class="card">
 <h3>HbA1c 7’nin Üzerindeyse Gerçek Risk Nedir?</h3>
 <p>Uzun vadeli kan şekeri kontrolünün damar sağlığı üzerindeki etkileri.</p>
 </div>
-</a>
 <div class="card">
 <h3>Açlık Şekeri Normal Ama HbA1c Yüksek Olabilir mi?</h3>
 <p>Gizli diyabet ve metabolik düzensizliklerin erken işaretleri.</p>
@@ -171,44 +186,22 @@ font-size:40px;
 </div>
 </div>
 </section>
+
 <section class="section highlight">
-  <section class="section">
-<h2>Diyabetdoktorum Cevaplıyor</h2>
-<p>Diyabet, obezite ve metabolik sağlıkla ilgili sorularınızı iletebilirsiniz.</p>
-
-<form action="https://formspree.io/f/mgoldkny" method="POST">
-
-<label>Ad Soyad</label><br>
-<input type="text" name="isim" required style="width:100%;padding:10px;margin-bottom:15px;"><br>
-
-<label>E-posta</label><br>
-<input type="email" name="email" required style="width:100%;padding:10px;margin-bottom:15px;"><br>
-
-<label>Sorunuz</label><br>
-<textarea name="mesaj" rows="5" required style="width:100%;padding:10px;margin-bottom:15px;"></textarea><br>
-
-<button type="submit" style="background:#1e3a8a;color:white;padding:12px 25px;border:none;border-radius:8px;">
-Gönder
-</button>
-
-</form>
-
-<p style="font-size:12px;margin-top:15px;color:#64748b;">
-Bu form tıbbi tanı ve tedavi amacı taşımaz. Kişisel sağlık bilgilerinizi detaylı paylaşmayınız.
-</p>
-</section>
-<h2>Diyabet ve Obezite Neden Birlikte Ele Alınmalı?</h2>
-<p>İnsülin direnci, kilo artışı ve kronik hiperglisemi aynı fizyopatolojik zeminde gelişir. Bütüncül yaklaşım olmadan kalıcı metabolik kontrol sağlanamaz.</p>
+<h2>Diyabet Yolculuğu Yalnızken Çekilmez.</h2>
+<p>Bazen bir başkasının deneyimi, kendi yolunuzu aydınlatır. Gerçek yaşam hikâyeleriyle yalnız olmadığınızı hatırlayın.</p>
+<a href="#" class="button button-primary">Tüm Hikâyeleri Oku</a>
 </section>
 
-<section class="cta">
-<h2>Metabolik kontrol rastgele sağlanmaz.</h2>
-<p>Bilimsel ve kişiselleştirilmiş bir plan gerekir.</p>
-<a href="#" class="button">Tüm İçerikleri Gör</a>
+<section class="section">
+<h2>Sorunuz mu var?</h2>
+<p>Diyabet ve metabolik sağlıkla ilgili sorunuzu iletebilirsiniz.</p>
+<a href="#" class="button button-primary">Uzmanına Sor</a>
 </section>
 
 <footer>
-<p>Diyabet, obezite, insülin direnci, HbA1c kontrolü ve kolesterol yönetimi üzerine bilimsel içerikler.</p>
+<p>Bu platform Dr. Ferhat Çetin tarafından hazırlanmıştır.</p>
+<p><a href="#">Hakkımızda</a> | <a href="#">İletişim</a></p>
 <p>© 2026 DiyabetDoktorum</p>
 </footer>
 
