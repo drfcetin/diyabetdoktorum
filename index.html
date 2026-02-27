@@ -4,251 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Diyabet Rehberi | Diyabet Nedir, Hikayeler ve Gündelik Hayat Rehberi</title>
-<meta name="description" content="Diyabetin günlük hayatta yarattığı zorlukları, bilimsel doğrulukla halk dilinde açıklayan rehber. Diyabetliler için yaşam ipuçları ve hikayeler.">
+<title>DiyabetDoktorum | Diyabet Rehberi ve Hikayeleri</title>
+<meta name="description" content="Diyabetlinin günlük hayatındaki zorlukları azaltacak öneriler, bilimsel ve anlaşılır bilgiler, yaşanmış hikayeler ve rehber içeriklerle DiyabetDoktorum.com'da.">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#f8fafc;
-  color:#1e293b;
-  line-height:1.6;
-}
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:white;
-  padding:16px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
-  z-index:1000;
-}
-nav .logo{
-  font-weight:700;
-  font-size:16px;
-}
-nav a{
-  text-decoration:none;
-  color:#1e293b;
-  margin-left:18px;
-  font-size:14px;
-  font-weight:500;
-}
-header{
-  background:#0f172a;
-  color:white;
-  padding:120px 20px 90px 20px;
-  text-align:center;
-}
-header h1{
-  font-size:28px;
-  margin-bottom:15px;
-}
-header p{
-  max-width:650px;
-  margin:auto;
-  opacity:0.9;
-}
-.hero-buttons{
-  margin-top:25px;
-}
-.button{
-  display:inline-block;
-  padding:12px 24px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:600;
-  margin:5px;
-}
-.button-primary{
-  background:#2563eb;
-  color:white;
-}
-.button-secondary{
-  background:white;
-  color:#0f172a;
-}
-.section{
-  padding:60px 20px;
-  max-width:1000px;
-  margin:auto;
-}
-.section h2{
-  margin-bottom:20px;
-}
-.highlight{
-  background:#e0f2fe;
-  padding:40px 20px;
-  border-radius:16px;
-}
-.post{
-  background:white;
-  padding:25px;
-  border-radius:16px;
-  box-shadow:0 4px 14px rgba(0,0,0,0.05);
-  margin-bottom:30px;
-}
-.post h3{
-  margin-top:0;
-}
-.post img{
-  max-width:100%;
-  border-radius:12px;
-  margin-bottom:15px;
-}
-footer{
-  background:#0f172a;
-  color:#94a3b8;
-  padding:40px 20px;
-  font-size:14px;
-  text-align:center;
-}
-footer a{
-  color:white;
-  text-decoration:none;
-}
-form input, form textarea{
-  width:100%;
-  padding:10px;
-  margin-bottom:15px;
-  border-radius:6px;
-  border:1px solid #ccc;
-  font-size:14px;
-}
-form button{
-  background:#2563eb;
-  color:white;
-  border:none;
-  padding:12px 20px;
-  border-radius:6px;
-  font-weight:600;
-  cursor:pointer;
-}
+body{margin:0;font-family:Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;}
+nav{position:fixed;top:0;width:100%;background:white;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);z-index:1000;}
+nav .logo{font-weight:700;font-size:16px;}
+nav a{text-decoration:none;color:#1e293b;margin-left:18px;font-size:14px;font-weight:500;}
+header{background:#0f172a;color:white;padding:120px 20px 90px 20px;text-align:center;}
+header h1{font-size:28px;margin-bottom:15px;}
+header p{max-width:650px;margin:auto;opacity:0.9;}
+.hero-buttons{margin-top:25px;}
+.button{display:inline-block;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;margin:5px;}
+.button-primary{background:#2563eb;color:white;}
+.button-secondary{background:white;color:#0f172a;}
+.section{padding:60px 20px;max-width:1000px;margin:auto;}
+.section h2{margin-bottom:20px;}
+.highlight{background:#e0f2fe;padding:40px 20px;border-radius:16px;}
+.post-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:40px;margin-bottom:40px;}
+.post-card{flex:1 1 300px;text-decoration:none;color:#1e293b;text-align:center;border:2px dashed #94a3b8;border-radius:12px;padding:10px;transition:0.2s;}
+.post-card:hover{transform:translateY(-4px);}
+.post-card img{width:100%;border-radius:12px;margin-bottom:10px;}
+.post-card h3{background:rgba(255,255,255,0.8);display:inline-block;padding:4px 8px;border-radius:6px;margin-bottom:6px;}
+.post-card p{background:rgba(255,255,255,0.6);display:inline-block;padding:4px 6px;border-radius:6px;font-size:14px;}
+footer{background:#0f172a;color:#94a3b8;padding:40px 20px;font-size:14px;text-align:center;}
+footer a{color:white;text-decoration:none;}
+form input, form textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #cbd5e1;}
+form button{background:#2563eb;color:white;padding:12px 20px;border:none;border-radius:6px;font-weight:600;cursor:pointer;}
 </style>
-</head>
 
-<body>
-
-<nav>
-  <div class="logo">DiyabetDoktorum</div>
-  <div>
-    <a href="rehber.html">Rehber</a>
-    <a href="#">Hikâyeler</a>
-    <a href="#hikaye-form">Sen de Hikayeni Paylaş</a>
-    <a href="#">Biz Kimiz</a>
-  </div>
-</nav>
-
-<header>
-  <h1>Diyabet yolculuğunda karşılıklı öğreniyoruz.</h1>
-  <p>Diyabet, insülin direnci, HbA1c yüksekliği ve kan şekeri yönetimi hakkında bilimsel, anlaşılır ve insan merkezli bir rehber.</p>
-
-  <div class="hero-buttons">
-    <a href="rehber.html" class="button button-primary">Rehberi Keşfet</a>
-    <a href="#hikaye-form" class="button button-secondary">Hikayeni Paylaş</a>
-  </div>
-</header>
-
-<section class="section">
-  <div class="post">
-    <h3>DiyabetDoktorum.com neden var?</h3>
-    <p>
-      Bu platformun amacı, diyabetlilerin günlük yaşamda karşılaştığı zorlukları tartışmak ve yüklerini azaltacak öneriler sunmaktır.
-      Bilimsel doğrulukla halk dilinde hazırlanan bilgiler, özel günlerde yaşanan tatsızlıkların nasıl bertaraf edileceğini ve sosyal hayatta diyabetin etkilerini kapsayan gerçek yaşanmışlıklarla desteklenir.
-      Burada, şekerim düşerse ne yapmalıyım, havaalanında diyabet problemi olur mu, iş başvurusunda diyabetli olduğumu söylemeli miyim, gönül ilişkilerimi nasıl yönetmeliyim gibi soruların yanıtlarını bulabilirsiniz.
-    </p>
-    <img src="img/diyabet-gundelik-hayat.jpg" alt="Diyabetli bir kişinin gündelik hayatında kan şekeri ölçümü yapması">
-  </div>
-</section>
-
-<section class="section">
-  <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:40px; margin-bottom:40px;">
-    
-    <a href="rehber.html" style="flex:1 1 300px; text-decoration:none; color:#1e293b; text-align:center;">
-      <img src="img/rehber-banner.jpg" alt="Diyabet rehberi ana sayfa görseli" style="width:100%; border-radius:12px; margin-bottom:10px;">
-      <h3>Diyabet Rehberi</h3>
-      <p>Diyabet nedir, belirtileri, kan şekeri yönetimi ve tüm rehber bilgilerini keşfet.</p>
-    </a>
-
-    <a href="hikayeler.html" style="flex:1 1 300px; text-decoration:none; color:#1e293b; text-align:center;">
-      <img src="img/hikayeler-banner.jpg" alt="Diyabet hikayeleri ana sayfa görseli" style="width:100%; border-radius:12px; margin-bottom:10px;">
-      <h3>Diyabet Hikayeleri</h3>
-      <p>Diyabetli bireylerin yaşanmış hikayelerini oku ve onların deneyimlerinden ipuçları al.</p>
-    </a>
-
-  </div>
-</section>  
-  
-<section class="section">
-  <h2>Sen de hikayeni paylaşmak ister misin?</h2>
-  <p>
-    Sen de diyabetdoktorum üzerinden diyabet hikayelerini paylaşmak, yaşadığın hikayenin uzman gözünden değerlendirilip çözüm önerileriyle başka bir diyabetliye ışık tutmasını sağlamak istersen, bize yazabilirsin. 
-    Bu alana yazılan her şey anonim kalacaktır. Mail adresi ve iletişim bilgilerini bırakırsan, ayrıntılar için haberleşerek hikayeni çok daha doğru aktarabiliriz.
-  </p>
-  <form id="hikaye-form" action="https://formspree.io/f/mgoldkny" method="POST">
-    <input type="text" name="isim" placeholder="İsim (isteğe bağlı)" />
-    <input type="email" name="email" placeholder="E-posta adresiniz" required />
-    <textarea name="mesaj" rows="6" placeholder="Hikayenizi buraya yazın..." required></textarea>
-    <button type="submit">Gönder</button>
-  </form>
-</section>
-
-<section class="section highlight">
-  <h2>Diyabet, rakamlardan ibaret değildir.</h2>
-  <p>
-    Diyabet yalnızca glukometrede görülen bir sayı değildir. İş hayatında, okulda, aile içinde ve günlük yaşamın her anında yer alır. 
-    Bu platform, diyabeti yaşamın içinden bir perspektifle ele alır.
-  </p>
-</section>
-
-<section class="section">
-  <h2>Diyabet Nedir? Temel Bilgiler</h2>
-  <p>
-    Diyabet; kan şekeri düzeyinin kronik olarak yüksek seyretmesi ile karakterize bir metabolizma hastalığıdır. 
-    Tip 1 diyabet, tip 2 diyabet ve gebelik diyabeti gibi farklı türleri bulunur. 
-    Bu platformda diyabet belirtileri nelerdir, kan şekeri kaç olmalı, HbA1c nedir, insülin direnci nasıl anlaşılır ve diyabet tedavisi nasıl planlanır gibi temel soruların yanıtlarını bulabilirsiniz.
-  </p>
-  <p><a href="rehber.html"><strong>Diyabet Rehberini incelemek için tıklayın →</strong></a></p>
-</section>
-
-<!-- Basit FAQ Schema JSON-LD -->
+<!-- JSON-LD FAQ Schema -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
     {
-      "@type": "Question",
-      "name": "Diyabet nedir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Diyabet, kan şekeri düzeyinin kronik olarak yüksek seyretmesi ile karakterize bir metabolizma hastalığıdır."
-      }
+      "@type":"Question",
+      "name":"Diyabet nedir?",
+      "acceptedAnswer":{"@type":"Answer","text":"Diyabet, kan şekeri düzeyinin kronik olarak yüksek seyretmesi ile karakterize bir metabolizma hastalığıdır."}
     },
     {
-      "@type": "Question",
-      "name": "HbA1c nedir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "HbA1c, son 2-3 aylık ortalama kan şekeri düzeyini gösterir ve diyabet takibinde önemli bir göstergedir."
-      }
+      "@type":"Question",
+      "name":"Kan şekeri nasıl yönetilir?",
+      "acceptedAnswer":{"@type":"Answer","text":"Kan şekeri yönetimi diyet, egzersiz, ilaçlar ve düzenli takip ile sağlanır."}
     }
   ]
 }
 </script>
 
+</head>
+<body>
+
+<nav>
+<div class="logo">DiyabetDoktorum</div>
+<div>
+<a href="rehber.html">Rehber</a>
+<a href="hikayeler.html">Hikâyeler</a>
+<a href="https://formspree.io/f/mgoldkny">Hikayeni Paylaş</a>
+<a href="#">Biz Kimiz</a>
+</div>
+</nav>
+
+<header>
+<h1>Diyabet yolculuğunda karşılıklı öğreniyoruz.</h1>
+<p>
+Diyabetin gündelik hayatta yarattığı yükü azaltacak öneriler ve bilimsel olarak doğru bilgileri halk dilinde bulabileceğiniz, yaşanmış hikayelerle desteklenen bir platform.
+</p>
+<div class="hero-buttons">
+<a href="rehber.html" class="button button-primary">Rehberi Keşfet</a>
+<a href="hikayeler.html" class="button button-secondary">Gerçek Hikâyeleri Oku</a>
+</div>
+</header>
+
+<section class="section">
+<h2>DiyabetDoktorum.com neden var?</h2>
+<p>
+Amacımız, diyabetlinin günlük yaşamında karşılaştığı problemleri tartışmak, sosyal hayatta hastalık yükünü azaltacak öneriler vermek, özel durumlarda yaşanan tatsızlıkları çözümlemek ve tedavi süreçlerini daha uygulanabilir kılmak. 
+Bilimsel doğruluğa sadık ama halk dilinde anlaşılır bilgiler ile, diyabeti yaşamın içinden bir perspektifle ele alıyoruz.
+</p>
+</section>
+
+<section class="section post-container">
+<!-- İki ana kutu -->
+<a href="rehber.html" class="post-card" style="background:url('img/placeholder-light.png') center/cover no-repeat;">
+<img src="img/rehber-banner.jpg" alt="Diyabet rehberi görseli">
+<h3>Diyabet Rehberi</h3>
+<p>Rehber sayfasına giderek diyabet belirtileri, kan şekeri yönetimi ve temel bilgilerle tüm alt konuları keşfet.</p>
+</a>
+
+<a href="hikayeler.html" class="post-card" style="background:url('img/placeholder-light.png') center/cover no-repeat;">
+<img src="img/hikayeler-banner.jpg" alt="Diyabet hikayeleri görseli">
+<h3>Diyabet Hikayeleri</h3>
+<p>Diyabetli bireylerin yaşanmış hikayelerini oku ve onların deneyimlerinden ipuçları al.</p>
+</a>
+</section>
+
+<section class="section highlight">
+<h2>Sen de hikayeni paylaşmak ister misin?</h2>
+<p>
+Sen de DiyabetDoktorum üzerinden diyabet hikayelerini paylaşmak, yaşadığın hikayenin uzman gözünden değerlendirilip çözüm önerileriyle bir başka diyabetliye ışık tutmak istersen, bize yazabilirsin. 
+Bu alana yazılan her şey anonim kalacaktır. Mail adresi ve iletişim bilgilerini bırakırsan, ayrıntılar için haberleşerek hikayeni çok daha doğru aktarabiliriz.
+</p>
+<form action="https://formspree.io/f/mgoldkny" method="POST">
+<input type="text" name="name" placeholder="Adınız (isteğe bağlı)">
+<input type="email" name="_replyto" placeholder="E-posta adresiniz (isteğe bağlı)">
+<textarea name="message" rows="5" placeholder="Hikayenizi buraya yazın"></textarea>
+<button type="submit">Gönder</button>
+</form>
+</section>
+
 <footer>
-  <p>Diyabet nedir, diyabet belirtileri, kan şekeri kaç olmalı, HbA1c ve insülin direnci hakkında güvenilir içerikler.</p>
-  <p>Bu platform Dr. Ferhat Çetin tarafından hazırlanmıştır.</p>
-  <p><a href="#">Hakkımızda</a> | <a href="#">İletişim</a> | <a href="#">Gizlilik Politikası</a></p>
-  <p style="font-size:12px; margin-top:15px;">
-    Bu içerikler genel bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka doktorunuza başvurunuz.
-  </p>
-  <p>© 2026 DiyabetDoktorum</p>
+<p>Bu içerikler genel bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka doktorunuza başvurunuz.</p>
+<p>© 2026 DiyabetDoktorum</p>
+<p><a href="#">Hakkımızda</a> | <a href="#">Gizlilik Politikası</a> | <a href="#">İletişim</a></p>
 </footer>
 
 </body>
