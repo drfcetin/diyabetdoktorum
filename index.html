@@ -4,122 +4,106 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DiyabetDoktorum | Diyabet Rehberi ve Hikayeleri</title>
-<meta name="description" content="Diyabetlinin günlük hayatındaki zorlukları azaltacak öneriler, bilimsel ve anlaşılır bilgiler, yaşanmış hikayeler ve rehber içeriklerle DiyabetDoktorum.com'da.">
+<title>Diyabet Rehberi | Dr. Ferhat Çetin</title>
+<meta name="description" content="Diyabet, obezite ve metabolik sağlık hakkında bilimsel, güncel ve hasta odaklı rehber.">
 
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;}
-nav{position:fixed;top:0;width:100%;background:white;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);z-index:1000;}
-nav .logo{font-weight:700;font-size:16px;}
-nav a{text-decoration:none;color:#1e293b;margin-left:18px;font-size:14px;font-weight:500;}
-header{background:#0f172a;color:white;padding:120px 20px 90px 20px;text-align:center;}
-header h1{font-size:28px;margin-bottom:15px;}
-header p{max-width:650px;margin:auto;opacity:0.9;}
-.hero-buttons{margin-top:25px;}
-.button{display:inline-block;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;margin:5px;}
-.button-primary{background:#2563eb;color:white;}
-.button-secondary{background:white;color:#0f172a;}
-.section{padding:60px 20px;max-width:1000px;margin:auto;}
-.section h2{margin-bottom:20px;}
-.highlight{background:#e0f2fe;padding:40px 20px;border-radius:16px;}
-.post-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:40px;margin-bottom:40px;}
-.post-card{flex:1 1 300px;text-decoration:none;color:#1e293b;text-align:center;border:2px dashed #94a3b8;border-radius:12px;padding:10px;transition:0.2s;}
-.post-card:hover{transform:translateY(-4px);}
-.post-card img{width:100%;border-radius:12px;margin-bottom:10px;}
-.post-card h3{background:rgba(255,255,255,0.8);display:inline-block;padding:4px 8px;border-radius:6px;margin-bottom:6px;}
-.post-card p{background:rgba(255,255,255,0.6);display:inline-block;padding:4px 6px;border-radius:6px;font-size:14px;}
-footer{background:#0f172a;color:#94a3b8;padding:40px 20px;font-size:14px;text-align:center;}
-footer a{color:white;text-decoration:none;}
-form input, form textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid #cbd5e1;}
-form button{background:#2563eb;color:white;padding:12px 20px;border:none;border-radius:6px;font-weight:600;cursor:pointer;}
-</style>
-
-<!-- JSON-LD FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {
-      "@type":"Question",
-      "name":"Diyabet nedir?",
-      "acceptedAnswer":{"@type":"Answer","text":"Diyabet, kan şekeri düzeyinin kronik olarak yüksek seyretmesi ile karakterize bir metabolizma hastalığıdır."}
-    },
-    {
-      "@type":"Question",
-      "name":"Kan şekeri nasıl yönetilir?",
-      "acceptedAnswer":{"@type":"Answer","text":"Kan şekeri yönetimi diyet, egzersiz, ilaçlar ve düzenli takip ile sağlanır."}
-    }
-  ]
-}
-</script>
-
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-<div class="logo">DiyabetDoktorum</div>
-<div>
-<a href="rehber.html">Rehber</a>
-<a href="hikayeler.html">Hikâyeler</a>
-<a href="https://formspree.io/f/mgoldkny">Hikayeni Paylaş</a>
-<a href="#">Biz Kimiz</a>
-</div>
-</nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">DiyabetDoktorum</div>
 
-<header>
-<h1>Diyabet yolculuğunda karşılıklı öğreniyoruz.</h1>
-<p>
-Diyabetin gündelik hayatta yarattığı yükü azaltacak öneriler ve bilimsel olarak doğru bilgileri halk dilinde bulabileceğiniz, yaşanmış hikayelerle desteklenen bir platform.
-</p>
-<div class="hero-buttons">
-<a href="rehber.html" class="button button-primary">Rehberi Keşfet</a>
-<a href="hikayeler.html" class="button button-secondary">Gerçek Hikâyeleri Oku</a>
-</div>
+    <nav class="nav-links">
+        <a href="#">Ana Sayfa</a>
+        <a href="/diyabet-rehberi.html">Diyabet Rehberi</a>
+        <a href="/ben-kimim.html">Ben Kimim</a>
+        <a href="/diyabet-yanlislar.html">Yanlış Bilinenler</a>
+        <a href="/diyabet-sozlugu.html">Sözlük</a>
+        <a href="/forum.html">Forum</a>
+        <a href="/iletisim.html">İletişim</a>
+    </nav>
+
+    <div class="menu-toggle">☰</div>
 </header>
 
-<section class="section">
-<h2>DiyabetDoktorum.com neden var?</h2>
-<p>
-Amacımız, diyabetlinin günlük yaşamında karşılaştığı problemleri tartışmak, sosyal hayatta hastalık yükünü azaltacak öneriler vermek, özel durumlarda yaşanan tatsızlıkları çözümlemek ve tedavi süreçlerini daha uygulanabilir kılmak. 
-Bilimsel doğruluğa sadık ama halk dilinde anlaşılır bilgiler ile, diyabeti yaşamın içinden bir perspektifle ele alıyoruz.
-</p>
+<!-- HERO -->
+<section class="hero">
+    <h1>Diyabet ve Obezite Yönetiminde Bilimsel Yaklaşım</h1>
+    <p>
+        Güncel tedaviler, gerçek hasta deneyimleri ve geleceğin yaklaşımlarıyla 
+        diyabet ve metabolik sağlığı birlikte yönetelim.
+    </p>
 </section>
 
-<section class="section post-container">
-<!-- İki ana kutu -->
-<a href="rehber.html" class="post-card" style="background:url('img/placeholder-light.png') center/cover no-repeat;">
-<img src="img/rehber-banner.jpg" alt="Diyabet rehberi görseli">
-<h3>Diyabet Rehberi</h3>
-<p>Rehber sayfasına giderek diyabet belirtileri, kan şekeri yönetimi ve temel bilgilerle tüm alt konuları keşfet.</p>
-</a>
+<!-- 3 ANA YOL -->
+<section class="main-paths">
 
-<a href="hikayeler.html" class="post-card" style="background:url('img/placeholder-light.png') center/cover no-repeat;">
-<img src="img/hikayeler-banner.jpg" alt="Diyabet hikayeleri görseli">
-<h3>Diyabet Hikayeleri</h3>
-<p>Diyabetli bireylerin yaşanmış hikayelerini oku ve onların deneyimlerinden ipuçları al.</p>
-</a>
+    <div class="path-card">
+        <h2>Diyabet Tedavisinde Güncel Durum</h2>
+        <p>Yeni ilaçlar, teknolojiler ve gelecekteki tedavi yaklaşımları.</p>
+        <a href="/diyabet-guncel.html" class="btn">Keşfet</a>
+    </div>
+
+    <div class="path-card">
+        <h2>Diyabetle Yaşam</h2>
+        <p>Gerçek hikayeler, sosyal hayat ve diyabet yükünü azaltma yolları.</p>
+        <a href="/diyabet-yasam.html" class="btn">Keşfet</a>
+    </div>
+
+    <div class="path-card">
+        <h2>Obezite ve GLP Tedavileri</h2>
+        <p>GLP öncesi hazırlık, kullanım süreci ve gelecekteki tedaviler.</p>
+        <a href="/obezite.html" class="btn">Keşfet</a>
+    </div>
+
 </section>
 
-<section class="section highlight">
-<h2>Sen de hikayeni paylaşmak ister misin?</h2>
-<p>
-Sen de DiyabetDoktorum üzerinden diyabet hikayelerini paylaşmak, yaşadığın hikayenin uzman gözünden değerlendirilip çözüm önerileriyle bir başka diyabetliye ışık tutmak istersen, bize yazabilirsin. 
-Bu alana yazılan her şey anonim kalacaktır. Mail adresi ve iletişim bilgilerini bırakırsan, ayrıntılar için haberleşerek hikayeni çok daha doğru aktarabiliriz.
-</p>
-<form action="https://formspree.io/f/mgoldkny" method="POST">
-<input type="text" name="name" placeholder="Adınız (isteğe bağlı)">
-<input type="email" name="_replyto" placeholder="E-posta adresiniz (isteğe bağlı)">
-<textarea name="message" rows="5" placeholder="Hikayenizi buraya yazın"></textarea>
-<button type="submit">Gönder</button>
-</form>
+<!-- HİKAYE FORMU -->
+<section class="story-form">
+    <h2>Sen de hikayeni paylaşmak ister misin?</h2>
+
+    <p>
+        Sen de DiyabetDoktorum üzerinden diyabet hikayelerini paylaşmak, yaşadığın hikayenin uzman gözünden 
+        değerlendirilip çözüm önerileriyle bir başka diyabetliye ışık tutmak istersen, bize yazabilirsin.
+        Bu alana yazılan her şey anonim kalacak, editör gözetiminden geçtikten sonra "sizden gelenler" bölümünde yayınlanacaktır.
+        Mail adresi ve iletişim bilgilerini bırakırsan, ayrıntılar için haberleşerek hikayeni çok daha doğru aktarabiliriz.
+    </p>
+
+    <!-- FORM (Formspree ile çalışır) -->
+    <form action="https://formspree.io/f/mgoldkny" method="POST">
+
+        <input type="text" name="isim" placeholder="İsim / Rumuz" required>
+
+        <input type="email" name="email" placeholder="E-mail adresi (gizli kalacaktır)" required>
+
+        <textarea name="hikaye" rows="6" maxlength="1000" placeholder="Hikayeniz (max 1000 kelime)" required></textarea>
+
+        <button type="submit">Gönder</button>
+
+    </form>
 </section>
 
-<footer>
-<p>Bu içerikler genel bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka doktorunuza başvurunuz.</p>
-<p>© 2026 DiyabetDoktorum</p>
-<p><a href="#">Hakkımızda</a> | <a href="#">Gizlilik Politikası</a> | <a href="#">İletişim</a></p>
+<!-- FOOTER -->
+<footer class="footer">
+
+    <p>
+        Bu sitede yer alan bilgiler tıbbi danışmanlık yerine geçmez. 
+        Tanı ve tedavi için mutlaka hekiminize başvurunuz.
+    </p>
+
+    <p>
+        Kendi kendinize ilaç kullanmayınız. 
+        Sağlık kararlarınızı yalnızca sizi muayene eden hekiminizle birlikte alınız.
+    </p>
+
+    <p>© 2026 DiyabetDoktorum</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
